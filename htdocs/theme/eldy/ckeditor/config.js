@@ -9,6 +9,8 @@ CKEDITOR.editorConfig = function( config )
 	// http://docs.cksource.com/CKEditor_3.x/Developers_Guide
 	// http://docs.cksource.com/ckeditor_api/symbols/CKEDITOR.config.html
 	config.enterMode = CKEDITOR.ENTER_BR;
+	//Disable accents - storing e as epsilon in database for example
+	config.entities_greek = false;
 	//config.forceSimpleAmpersand = true;	// When you put a <img src="x?a=a&b=b"> into the textarea, and go into "source", then ckeditor change the & into &amp;. We don't want this. But this option does not fix this.
 	//config.entities = false;			// When you put a <img src="x?a=a&b=b"> into the textarea, and go into "source", then ckeditor change the & into &amp;. We don't want this. But this option does not fix this.
 	//config.entities_greek = false;
